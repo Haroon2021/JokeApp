@@ -15,9 +15,9 @@ let jokeapp = {
     displayJoke: function(data) {
         const setup = data[0].setup;
        const punchline = data[0].punchline;
-       console.log(setup)
        document.querySelector(".setup").innerText = "Setup: " + setup;
     document.querySelector(".punchline").innerText = "Punchline: " + punchline;
+    document.querySelector(".search-joke").value = ""
     },
     type: function () {
         this.fetch(document.querySelector(".search-joke").value);
